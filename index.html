@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <title>Log</title>
+  </head>
+  <body>
+    <div class="my-container">
+      <aside id="left-aside" class="aside-table">
+        <table id="left-table" class="display">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <!-- {% for item in data %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.username }}</td>
+          </tr>
+          {% endfor %} -->
+          </tbody>
+        </table>
+      </aside>
+
+      <main id="main">
+        <!-- Include your list of cards here -->
+        <div class="card-box" id="1" onclick="openModal(this.id)">
+          <h2>Title1</h2>
+          <p>1403/02/31</p>
+        </div>
+        <div class="card-box" id="2" onclick="openModal(this.id)">
+          <h2>Title2</h2>
+          <p>1403/02/31</p>
+        </div>
+
+        <!-- Include your modal here -->
+        <div id="myModal" class="">
+          <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+      </main>
+      <div id="myDivider" class=""></div>
+
+      <aside id="right-aside" class="aside-table">
+        <table id="right-table" class="display">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- {% for item in data %}
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.username }}</td>
+          </tr>
+          {% endfor %} -->
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>hosein</td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
+    </div>
+
+    <!-- Include your JavaScript for the modal functionality -->
+    <script>
+      // Function to open the modal
+      function openModal(id) {
+        $(".aside-table").addClass("disable");
+        $(".card-box").addClass("disable");
+        $("#myDivider").addClass("blured-divider");
+        $("#myModal").addClass("modal-active");
+      }
+      function closeModal() {
+        $(".aside-table").removeClass("disable");
+        $(".card-box").removeClass("disable");
+        $("#myModal").removeClass("modal-active");
+        $("#myDivider").removeClass("blured-divider");
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("#left-table").DataTable({
+          scrollY: "440px",
+          scrollCollapse: true,
+          paging: false,
+          lengthChange: false,
+          info: false,
+          column: [{ data: "id" }, { data: "username" }],
+        });
+        $("#right-table").DataTable({
+          scrollY: "440px",
+          scrollCollapse: true,
+          paging: false,
+          lengthChange: false,
+          info: false,
+          column: [{ data: "id" }, { data: "username" }],
+        });
+      });
+    </script>
+  </body>
+</html>
