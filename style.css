@@ -116,6 +116,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     color: black;
+    border-radius: 10px;
 }
 
 th,
@@ -124,6 +125,13 @@ td {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.dataTables_scrollHead {
+    border-radius: 10px 10px 0 0;
+}
+
+.dataTables_scrollBody {
+    border-radius: 0 0 10px 10px;
+}
 
 .dataTables_scrollHeadInner {
     width: 100% !important;
@@ -139,13 +147,18 @@ td {
 #left-table_filter,
 #right-table_filter {
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
 
 #left-table_filter label,
 #right-table_filter label {
     text-align: left !important;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: .9rem;
+    width: 100%;
 }
 
 #left-table_filter input,
@@ -156,6 +169,7 @@ td {
     min-height: 35px;
     width: 100% !important;
     margin: 0;
+    border-radius: 10px;
 }
 
 table.dataTable.stripe tbody tr.odd,
@@ -181,7 +195,7 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 #myModal {
     width: 700px;
     height: 550px;
-    background-color: #fff;
+    background-color: #ffffffc5;
     color: #000;
     position: absolute;
     border-radius: 10px;
@@ -191,6 +205,8 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     transform: translate(-50%, -50%);
     transition-duration: .3s;
     transition-delay: 0.1s;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-active {
@@ -203,10 +219,19 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
 
 .close {
     font-size: 2rem;
-    width: 10px;
-    height: 10px;
-    background-color: red;
+    background-color: #f1c9c9;
     display: inline-block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    align-self: flex-end;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.close svg {
+    width: 100%;
+    height: 100%;
 }
 
 /* ----------------- media queries --------------------- */
